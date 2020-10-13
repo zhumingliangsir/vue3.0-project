@@ -27,9 +27,10 @@ export default defineComponent({
         const toggleOpen = () => {
             isOpen.value = !isOpen.value;
         };
-
+        // 监听 isClickOutside 的状态
         const isClickOutside = useClickOutside(dropdownRef);
         watch(isClickOutside, () => {
+            // 如果点击了外部，并且当前 dropdown 为显示的情况下，将其隐藏
             if (isOpen.value && isClickOutside.value) {
                 isOpen.value = false;
             }
