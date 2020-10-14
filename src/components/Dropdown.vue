@@ -10,7 +10,6 @@
     </div>
 </template>
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent, ref, onMounted, onUnmounted, watch } from "vue";
 import useClickOutside from "../hooks/useClickOutside";
 export default defineComponent({

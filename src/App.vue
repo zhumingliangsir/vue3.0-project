@@ -7,13 +7,13 @@
 </template>
 
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent } from "vue";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import GlobalHeader, { UserProps } from "./components/GlobalHeader.vue";
 import GlobalFooter from "./components/GlobalFooter.vue";
 
+/* 登录状态 */
 const currentUser: UserProps = {
     isLogin: true,
     name: "koma",

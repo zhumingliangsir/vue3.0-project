@@ -17,7 +17,6 @@
     </div>
 </template>
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent, PropType, computed } from "vue";
 export interface ColumnProps {
     id: number;

@@ -15,7 +15,6 @@
     </nav>
 </template>
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent, PropType } from "vue";
 import Dropdown from "./Dropdown.vue";
 import DropdownItem from "./DropdownItem.vue";

@@ -18,7 +18,6 @@
 </template>
 
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent, PropType } from "vue";
 import { PostProps } from "../testData";
 

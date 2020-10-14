@@ -5,7 +5,6 @@
     </div>
 </template>
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent, reactive, PropType, onMounted } from "vue";
 import { emitter } from "./ValidateForm.vue";
 const emailReg = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;

@@ -18,7 +18,6 @@
 
 </template>
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent, ref } from "vue";
 import { useRouter } from "vue-router";
 import ValidateInput, { RulesProp } from "@/components/ValidateInput.vue";
@@ -58,7 +57,8 @@ export default defineComponent({
         const onFormSubmit = (result: boolean) => {
             console.log("result", result);
             if (result) {
-                router.push({ name: "column", params: { id: 1 } });
+                // router.push({ name: "column", params: { id: 1 } });
+                router.push("/");
             }
         };
         return {

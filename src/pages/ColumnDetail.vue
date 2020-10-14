@@ -13,7 +13,6 @@
     </div>
 </template>
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent } from "vue";
 import { useRoute } from "vue-router";
 import { testData, testPosts } from "../testData";

@@ -16,7 +16,6 @@
     </div>
 </template>
 <script lang="ts">
-/* eslint-disable */
 import { defineComponent } from "vue";
 import ColumnList, { ColumnProps } from "@/components/ColumnList.vue";
 import { testData } from "../testData";
