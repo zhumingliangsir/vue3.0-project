@@ -19,6 +19,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 import ValidateInput, { RulesProp } from "@/components/ValidateInput.vue";
 import ValidateForm from "@/components/ValidateForm.vue";
@@ -54,11 +55,15 @@ export default defineComponent({
                 message: "密码不能为空",
             },
         ];
+
+        const store = useStore();
+
         const onFormSubmit = (result: boolean) => {
             console.log("result", result);
             if (result) {
                 // router.push({ name: "column", params: { id: 1 } });
                 router.push("/");
+                store.commit("login");
             }
         };
         return {
