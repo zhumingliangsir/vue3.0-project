@@ -38,11 +38,11 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  console.log(to.meta);
-  /* 如果目标路由不是 login ，并且当前是未登录状态 则重定向登录页面*/
   if (to.meta.requiredLogin && !store.state.user.isLogin) {
+    /* 如果目标路由 需要登录 ，并且当前是未登录状态 则重定向登录页面*/
     next({ name: "login" });
   } else if (to.meta.redirectAlreadyLogin && store.state.user.isLogin) {
+    /* 如果目标路由登录页面，并且当前已经登录，则重定向到首页*/
     next("/");
   } else {
     next();
